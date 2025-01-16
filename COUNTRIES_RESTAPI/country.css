@@ -1,0 +1,113 @@
+.back-btn {
+  padding: 8px 20px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+  /* margin: 20px; */
+  margin-top: 64px;
+  background-color: inherit;
+  color: inherit; 
+}
+
+.country-details {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  margin-top: 64px;
+}
+
+.country-details img {
+  width: 33rem;
+}
+.details-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+  column-gap: 105px;
+  max-height: 180px;
+  flex-wrap: wrap;
+}
+
+.details-text p {
+  margin: 0;
+}
+
+.border-countries{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-top: 25px;
+}
+
+.border-countries a{
+ /* display: inline-block;
+ text-align: center; */
+ height: 30px;
+ padding: 3px;
+ box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+ border-radius: 4px;
+ margin: 0 2px;
+}
+@media (max-width: 1250px) {
+  .country-details {
+    flex-direction: column;
+  }
+
+  .details-text {
+    /* display: block; */
+    /* max-height: auto;  */
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    column-gap: 100vm;
+    max-height: 180px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .border-countries{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 5px;
+    margin-top: 50px;
+  }
+  .country-details {
+    flex-direction: column;
+  }
+
+  .details-text {
+    /* display: block; */
+    /* max-height: auto;  */
+    display: flex;
+    flex-direction: row;
+    row-gap: 5px;
+    /* max-height: 180px; */
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  .border-countries{
+    margin-top: 20%;
+  }
+  .country-details {
+    flex-direction: column;
+  }
+
+  .details-text {
+    /* display: block; */
+    /* max-height: auto;  */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    row-gap: 5px;
+    /* max-height: 180px; */
+    flex-wrap: wrap;
+  }
+  .header-content h2{
+    font-size: 24px;
+    font-weight: bold;  }
+  .header-content p{
+    font-size: 12px;
+  }
+}
