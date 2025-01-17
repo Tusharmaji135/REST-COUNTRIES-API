@@ -72,7 +72,7 @@ function toggleClearFilterButton() {
 }
 
 // Initial data fetch
-fetchData("https://restcountries.com/v3.1/all");
+fetchData("../helper/data2.json");
 
 // Filter by region
 filterByRegion.addEventListener("change", (e) => {
@@ -80,14 +80,14 @@ filterByRegion.addEventListener("change", (e) => {
   if (region !== "-1") {
     fetchData(`https://restcountries.com/v3.1/region/${region}`);
   } else {
-    fetchData("https://restcountries.com/v3.1/all"); // Fetch all countries if no region is selected
+    fetchData("../helper/data2.json"); // Fetch all countries if no region is selected
   }
   toggleClearFilterButton(); // Show the button if a region filter is applied
 });
 
 // Clear filter
 clearFilter.addEventListener("click", () => {
-  fetchData("https://restcountries.com/v3.1/all"); // Fetch all countries
+  fetchData("../helper/data2.json"); // Fetch all countries
   filterByRegion.value = "-1"; // Reset dropdown selection to default
   toggleClearFilterButton(); // Hide the button after clearing filters
 });
